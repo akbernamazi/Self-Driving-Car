@@ -9,12 +9,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-import torch.autograd as autograd
+import torch.autograd as autograd # To convert tensors into gradient
 from torch.autograd import Variable
 
 # Creating the architecture of the Neural Network
 
-class Network(nn.Module):
+class Network(nn.Module):   # We inherit all the tools from nural networks
     
     def __init__(self, input_size, nb_action):
         super(Network, self).__init__()
